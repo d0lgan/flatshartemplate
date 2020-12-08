@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Карта</title>
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Common Styles -->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- Main Index -->
+	<link rel="stylesheet" href="css/map.css">
+	<!-- Шрифт Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<!-- DateTimePicker CSS -->
+	<link rel="stylesheet" href="css/jquery.datetimepicker.css">
+	<!-- JQuery CSS Slider -->
+	<link rel="stylesheet" href="https://kit.fontawesome.com/230cba36d5.js://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	
+<div class="bg-cont">
+
+	<nav class="navigation fixed-top">
+		<div class="wrap">
+			<div class="nav-flex">
+				<div class="logo-search">
+					<div class="logo">
+						<img src="imgs/logo.png" alt="l">
+						<p>FlatSharing</p>
+					</div>
+					<div class="search">
+						<!-- <input type="text" placeholder="Казань"> -->
+						<form>
+						  <input class="menu_input" type="text" placeholder="Казань">
+						  <button type="submit"></button>
+						</form>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="menu-list">
+						<a href="#">Избранное</a>
+						<a href="#">Настройки</a>
+						<a href="#">Выход</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<div class="map">
+    <div id="map" style="width:100%; height:490px"></div>
+</div>
+
+
+
+<div class="settings">
+	<div class="wrap">
+		<div class="container">
+			<div class="options">
+				<div class="row">
+					<div class="option check_in col-md-3 col-6">
+						<p>Заезд</p>
+						<span class="set">
+							<input  type="datetime-local" value="2017-06-01T08:30">
+						</span>
+					</div>
+					<div class="option check_out col-md-3 col-6">
+						<p>Выезд</p>
+						<span class="set">
+							<input  type="datetime-local" value="2017-06-01T08:30">
+						</span>
+					</div>
+					<div class="option price col-md-4 col-12">
+						<div class="slider_line">
+							<p>
+								<label for="amount">Цена:</label>
+								<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+							</p>
+							<div id="slider-range"></div>
+						</div>
+					</div>
+					<div class="option guests col-md-1 col-6 block3">
+						<p>Гостей</p>
+	                <div class="">
+	                    <select name="" id="">
+		                    	<option value="1">1</option>
+		                    	<option value="2">2</option>
+		                    	<option value="3">3</option>
+		                    	<option value="4">4</option>
+		                    	<option value="5">5</option>
+		                    	<option value="6">6</option>
+		                    </select>
+	                </div> 						
+					</div>
+					<div class="option radius col-md-1 col-6 block4">
+						<p>Радиус </p>
+						<div class="">
+		                    <select name="" id="">
+		                    	<option value="1">500m</option>
+		                    	<option value="2">1km</option>
+		                    	<option value="3">2km</option>
+		                    	<option value="4">3km</option>
+		                    	<option value="5">4km</option>
+		                    	<option value="6">5km</option>
+		                    </select>
+		                </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+<div class="filters dis_no">
+	<div class="row">
+			<div class="block9 col-sm-4 col-12">
+                    <h5>Район </h5>
+                    <div class="">
+                        <select name="" id="">
+		                    	<option value="1">Московский</option>
+		                    	<option value="2">Советский</option>
+		                    	<option value="3">Приволжский</option>
+		                    	<option value="4">Авиастроительный</option>
+		                    	<option value="5">Кировский</option>
+		                    	<option value="6">Ново-Савиновский</option>
+		                    	<option value="7">Вахитовски</option>
+		                    </select>
+                    </div>
+            </div>
+            <div class="block10 col-sm-4 col-12">
+                    <h5>Кол-во комнат </h5>
+                    <div class="prev-input_plus_minus">
+                        <span class="inputminus"><img src="imgs/minus.png" alt=""></span>
+                        <input class="inputresult" max="9" type="text" value="1">
+                        <span class="inputplus"><img src="imgs/plus.png" alt=""></span>
+                    </div>
+            </div>
+            <div class="block11 col-sm-4 col-12">
+                    <h5>Дополнительно</h5>
+                        <input id="check1" type="checkbox" name="check" value="check1">
+                        <label for="check1">С животными</label>
+                        <input id="check2" type="checkbox" name="check" value="check2">
+                        <label for="check2">С детьми</label>
+            </div>
+	</div>
+</div>
+
+<section>
+	<div class="wrap">
+		<div class="btns btns-mar">
+				<div class="clean_filt">
+					<a href="#">Очистить фильтр</a>
+				</div>
+				<div class="back_map">
+					<a href="#" class="btn_bg">Показать списком</a>
+				</div>
+				<div class="extra_filt block-8 dop_filt">
+					<a href="#">Дополнительные фильтры</a>
+				</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Map 2GIS -->
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<!-- Script of Map 2GIS -->
+<script src="js/map.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/230cba36d5.js" crossorigin="anonymous"></script>
+<!-- DateTimePicker -->
+<script src="js/jquery.datetimepicker.full.js"></script>
+<script src="js/datetime.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

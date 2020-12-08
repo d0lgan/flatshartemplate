@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Настройки</title>
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Common Styles -->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- Main Index -->
+	<link rel="stylesheet" href="css/options.css">
+	<!-- Шрифт Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+	
+<div class="bg-cont">
+
+	<nav class="navigation fixed-top">
+		<div class="wrap">
+			<div class="nav-flex">
+				<div class="logo-search">
+					<div class="logo">
+						<img src="imgs/logo.png" alt="l">
+						<p>FlatSharing</p>
+					</div>
+					<div class="search">
+						<form>
+						  <input type="text" placeholder="Казань">
+						  <button type="submit"></button>
+						</form>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="menu-list">
+						<a href="#">Избранное</a>
+						<a href="#" class="active">Настройки</a>
+						<a href="#">Выход</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<section>
+	<div class="wrap">
+		<div class="options">
+			<h2>Настройка учетной записи</h2>
+			<div class="form">
+				<div class="option"><span>Старый пароль</span><input type="text"></div>
+				<div class="option"><span>Новый пароль</span><input type="text"></div>
+				<div class="option"><span>Повторите пароль</span><input type="text"></div>
+				<button class="save_pass">Сохранить</button>
+			</div>
+
+			
+		</div>
+		<div class="transaction">
+			<h2>История транзакций</h2>
+			<div>
+				<div class="block">
+					<div class="row h">
+						<div class="rent col-7">
+							<span>Аренда</span> 
+						</div>
+						<div class="price col-3">
+							<span>Стоимость и статус</span> 
+						</div>
+						<div class="type col-2">
+							<span>Тип</span> 
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="row">
+						<div class="rent col-7">
+							<span>1.  ХНС с 27.10.2019 (11:00) по 30.10.2019 (08:00)</span>
+						</div>
+						<div class="price col-3">
+							<span>4500.00 / TRUE</span>
+						</div>
+						<div class="type col-2">
+							<span>A</span>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="row">
+						<div class="rent col-7">
+							<span>2.  ХНС с 20.6.2019 (16:30) по 30.6.2019 (10:00)</span>
+						</div>
+						<div class="price col-3">
+							<span>4500.00 / TRUE</span>
+						</div>
+						<div class="type col-2">
+							<span>B</span>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="row">
+						<div class="rent col-7">
+							<span>3.  ХНС с 14.5.2019 (14:10) по 20.6.2019 (10:00)</span>
+						</div>
+						<div class="price col-3">
+							<span>3400.00 / TRUE</span>
+						</div>
+						<div class="type col-2">
+							<span>C</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rents">
+			<h2>История аренд</h2>
+			<div>
+				<div class="block">
+					<div class="row h">
+						<div class="rent col-3">
+							<span>Адрес</span> 
+						</div>
+						<div class="price col-6">
+							<span>Даты</span> 
+						</div>
+						<div class="type col-3">
+							<span>Статус</span> 
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="row">
+						<div class="rent col-3">
+							<span>1.  ХНС</span>
+						</div>
+						<div class="price col-6">
+							<span> с 14.5.2019 (14:10) по 20.6.2019 (10:00)</span>
+						</div>
+						<div class="type col-3">
+							<span>TRUE</span>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="row">
+						<div class="rent col-3">
+							<span>2.  ХНС</span>
+						</div>
+						<div class="price col-6">
+							<span> с 14.5.2019 (14:10) по 20.6.2019 (10:00)</span>
+						</div>
+						<div class="type col-3">
+							<span>TRUE</span>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="row">
+						<div class="rent col-3">
+							<span>3.  ХНС</span>
+						</div>
+						<div class="price col-6">
+							<span> с 14.5.2019 (14:10) по 20.6.2019 (10:00)</span>
+						</div>
+						<div class="type col-3">
+							<span>TRUE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/230cba36d5.js" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>
